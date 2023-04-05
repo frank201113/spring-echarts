@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.2.1",
+  "workspaces": [
+    "packages/*",
+    "play"
+  ],
+  "scripts": {
+    "build": "pnpm run -C packages/spring-echarts build",
+    "dev:spring-echarts": "pnpm run -C packages/spring-echarts dev",
+    "build:play": "pnpm -C play build",
+    "dev": "pnpm -C play serve"    
+  }
+}
